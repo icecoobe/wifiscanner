@@ -40,7 +40,7 @@ public class WifiScanActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wifi_scan);
+        setContentView(R.layout.activity_wifi_scan_layout);
         buttonScan = findViewById(R.id.scanBtn);
         buttonScan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +118,7 @@ public class WifiScanActivity extends AppCompatActivity {
 
     void showToast(final String message) {
         LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.custom_toast,
+        View layout = inflater.inflate(R.layout.custom_toast_layout,
                 (ViewGroup) findViewById(R.id.custom_toast_container));
 
         TextView text = (TextView) layout.findViewById(R.id.text);
